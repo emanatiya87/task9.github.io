@@ -1,0 +1,71 @@
+:root{
+    --primaryColor:#FF3332;
+    --secondryColor:#797981;
+}
+
+.row .Head{
+    font-weight: bolder;
+}
+.row h3{
+    color: var(--primaryColor);
+    position: relative;
+    padding: 15px;
+
+}
+.row h3::after{
+    content: "__";
+    position: absolute;
+    bottom: 33%;
+   
+}
+.hidden{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    z-index: -1;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3); /* X-offset, Y-offset, blur-radius, color */
+
+}
+.sideBtn{
+background-color:var(--primaryColor) ;
+color: white;
+position: absolute;
+top: 20px;
+left: 20px;
+border-radius: 22px;
+padding: 12px;
+font-weight: 600;
+cursor: pointer;
+
+}
+.cardImg{
+    position: relative;
+height: 40%;
+}
+.cardImg img{
+  background-size: cover;
+}
+i{
+    color: var(--primaryColor);
+    padding-inline-end: 4px;
+}
+.date{
+    color: var(--secondryColor);
+}
+.card p{
+color: var(--secondryColor);
+}
+.card .btn{
+    color: var(--secondryColor);
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+.card .btn i{
+    color: var(--secondryColor);
+}
+.by{
+    padding-inline-end: 11px;
+}
